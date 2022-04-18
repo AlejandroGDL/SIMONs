@@ -4,28 +4,16 @@
     <!--Just CSS-->
     <link rel="stylesheet" href="CSS/Menustyles.css">
 
-    <!--Icons Online-->
+    <!--Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-    <!--Fuentes Online Poppins-->
-    <link rel="preconnect" href="ht0tps://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
 
     <meta charset="utf-8">
     <title>Menú</title>
   </head>
   <body>
 
-    <!--Botón Menú Mobile-->
-    <label class="Menu-Boton" for="menu-switch">
-    <i class="fa-solid fa-bars"></i>
-    </label>
-
     <!--Barra Navegación-->
     <header>
-      <input type="checkbox" id="menu-switch" class="Menu_Checkboxclass"></input>
       <nav>
         <ul>
           <!--Futuras Opciones-->
@@ -94,16 +82,19 @@
           </li>
         -->
 
-          <li> <a href="#">Inicio</a> </li>
           <span class="Divider"></span>
-          <li> <a href="#">Calificaciones</a> </li>
+          <li> <a href="#">Calificaciones</a></li>
           <span class="Divider"></span>
           <li> <a href="#">Materias</a> </li>
           <span class="DividerClose"></span>
           <li> <a href="index.html">Cerrar Sesión</a> </li>
 
-        </ul>
+          <!--Botón Menú Mobile-->
+          <div class="Menu-Boton">
+          <button type="button" name="menu-button"> <img src="Imagen/Menu_Color.png" id="Hi"> </button>
+          </div>
 
+        </ul>
       </nav>
     </header>
 
@@ -125,5 +116,7 @@
 
     </footer>
 
+
+<!--CambiosSergio-->
   </body>
 </html>
