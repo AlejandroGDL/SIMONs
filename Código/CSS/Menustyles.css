@@ -11,7 +11,7 @@ body{
 }
 
 *{
-  font-family: Poppins;
+  font-family: 'Poppins', serif;
   margin: 0px;
   padding: 0px;
   font-size: 21px;
@@ -160,33 +160,126 @@ header ul li:hover .SubMenu ul{
 }
 
 .Menu-Boton{
-  display: grid;
-  /*display: grid;*/
-  height: auto;
-  width: 1%;
+  display: none;
   border: 0px;
 }
 
-.Menu-Boton img,button{
-  align-items: center;
-  text-align: center;
-
-  border-radius: 10%;
-
-  font-size: 1px;
-  background-color: #FFFFFF;
-}
-
-#Hi{
-  font-size: 1px;
+.Menu_Checkboxclass{
+  display: none;
 }
 
 /*Mobile Responsive Version*/
 @media Screen and (max-width:800px) {
 
+  /*Encabezado*/
   header{
-    display: none;
+    margin-top: 0%;
+    background-color: var(--color-p);
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
   }
+
+  /*Tamaño Letra Menú*/
+  a{
+    font-size: 21px;
+  }
+
+  /*Acomodar Horizontalmente Menú*/
+  header ul{
+    display:grid;
+    list-style: none;
+    transform: translateY(-150%);
+  }
+
+  /*Decoración Letras Menu*/
+  header ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  /*Clase Mostrar Menú Mobile*/
+  ul--Show{
+    transform: translateY(0);
+  }
+
+
+  .Menu_Checkboxclass:checked + header{
+    transform: translateY(0);
+  }
+
+
+  /*Espacio estre Botones*/
+  .Divider{
+    background-color: var(--color-p);
+    height: 40px;
+    width: 1px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*Divisor*/
+  .DividerClose{
+    background-color: #FFFFFF;
+    height: 1px;
+    width: 150px;
+    margin: 35px 0px 20px 35%;
+  }
+
+  /*Tamaño Botones Menú*/
+  header ul li{
+    padding: 0px 0px 0px 0px;
+  }
+
+
+
+  /*Esconder Sub Menu 1*/
+  .SubMenu{
+    display: none;
+    position: relative;
+    border: 1px solid;
+    border-color: var(--color-p);
+  }
+
+  /*Esconder Sub Menu 2 & Propiedades*/
+  .SubMenu2{
+    display: none;
+    position: relative;
+    border: 1px solid;
+    border-color: #002D6D;
+    left: 0%;
+    top:-0.4%;
+    width: 100%;
+  }
+
+  /*Mostrar SubMenu2*/
+  .MenuDos:hover .SubMenu2{
+    display: block;
+    position: relative;
+  }
+
+  /*Mostrar Sub Menu*/
+  header ul li:hover .SubMenu{
+    display: block;
+    position: relative;
+    margin-left: -1.3%;
+    margin-top: 0%;
+  }
+
+
+
+  .Menu-Boton{
+    display: block;
+    position: absolute;
+    left: 85%;
+    z-index: 1;
+  }
+
+  .Menu-Boton i{
+    margin: 5px;
+    filter: invert(1);
+    cursor: pointer;
+    font-size: 50px;
+  }
+
 
 
   /*Pie de Pagína*/
@@ -230,7 +323,6 @@ header ul li:hover .SubMenu ul{
     font-size: 14px;
     margin-top: 15px;
   }
-
 
 
 }
