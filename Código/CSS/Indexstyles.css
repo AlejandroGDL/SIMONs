@@ -155,3 +155,114 @@ a:hover{
     box-shadow: 0px 0px 0px 10px rgba(85,115,185,0);
   }
 }
+
+@media Screen and (max-width:800px){
+
+/*Contenido*/
+  .ContentForm{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+
+    border: none;
+
+    width: 100%;
+    height: 99.7%;
+  }
+
+/*Background Image Slide*/
+  #SlideImage{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+/*Contenedor Datos Login*/
+  .DataLogin{
+    position:absolute;
+    left: 0%;
+    top: 0%;
+
+    width: 100%;
+    height: 100%;
+  }
+
+/*Logotipo Tec*/
+  #LogoTec{
+    position: absolute;
+    top: 0%;
+    margin: 0;
+    padding: 0;
+
+    width: 65%;
+    height: 15%;
+  }
+
+/*Contenedor Texbox & Label Contraseña*/
+  .AContra{
+    margin: 5% 0% 0% 0%;
+    width: 80%;
+  }
+
+  #ContraLabel{
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+  }
+
+  #TxtContra{
+    padding: 2%;
+    margin: 0;
+    font-size: 21px;
+  }
+
+/*Contenedor Texbox & Label Usuario*/
+  .AUser{
+    margin: 70% 0% 0% 0%;
+    width: 80%;
+    font-size: 21px;
+  }
+
+  #UserLabel{
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+  }
+
+  #TxtUser{
+    padding: 2%;
+    margin: 0;
+    font-size: 21px;
+  }
+
+  /*Botón Login*/
+  #LoginButton{
+
+  }
+
+  /*Button*/
+  a{
+    position: static;
+    margin-top: 5%;
+    width: 45%;
+    height: 9%;
+
+    background: #002D6D;
+    border: 0px;
+    border-radius: 4px;
+
+    /*font-size: 170%;*/
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  /*Button Hover*/
+  a:hover{
+    background-color: #00204D;
+  }
+
+
+
+}
