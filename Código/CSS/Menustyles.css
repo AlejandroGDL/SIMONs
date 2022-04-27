@@ -162,10 +162,10 @@ header ul li:hover .SubMenu ul{
 .Menu-Boton{
   display: none;
   border: 0px;
+
 }
 
 .Menu_Checkboxclass{
-  display: none;
 }
 
 /*Mobile Responsive Version*/
@@ -174,9 +174,8 @@ header ul li:hover .SubMenu ul{
   /*Encabezado*/
   header{
     margin-top: 0%;
-    background-color: var(--color-p);
-    text-align: center;
     border-radius: 0px 0px 10px 10px;
+    background-color: var(--color-p);
   }
 
   /*Tamaño Letra Menú*/
@@ -188,13 +187,14 @@ header ul li:hover .SubMenu ul{
   header ul{
     display:grid;
     list-style: none;
-    transform: translateY(-150%);
+    transform: translateY(0);
   }
 
   /*Decoración Letras Menu*/
   header ul li a{
     text-decoration: none;
     color: #FFFFFF;
+    background-color: var(--color-p);
   }
 
   /*Clase Mostrar Menú Mobile*/
@@ -203,7 +203,7 @@ header ul li:hover .SubMenu ul{
   }
 
 
-  .Menu_Checkboxclass:checked + header{
+  .Menu_Checkboxclass:checked , header{
     transform: translateY(0);
   }
 
