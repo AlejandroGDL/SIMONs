@@ -15,6 +15,9 @@ body{
   margin: 0px;
   padding: 0px;
   font-size: 21px;
+
+  /*Eliminar Subrayados*/
+  text-decoration: none;
 }
 
 /*Variables*/
@@ -27,6 +30,7 @@ header{
   margin-top: 3%;
   background-color: #FFFFFF;
   text-align: center;
+  z-index: 1;
 }
 
 /*Acomodar Horizontalmente Menú*/
@@ -164,9 +168,53 @@ header ul li:hover .SubMenu ul{
   border: 0px;
 }
 
+/*CheckBox Invisible*/
 .Menu_Checkboxclass{
   display: none;
   transition: transform 0.3s;
+}
+
+
+
+/*Menú Opciones*/
+.CardsMenu{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+/*Card Opción 1*/
+.CardOpcion1{
+  margin: 0 auto;
+  width: 60%;
+  border: 1px solid #00204D;
+  background-color: #00204D;
+}
+
+/*Propiedades Imagen Card*/
+.CardOpcion1 img{
+  position: relative;
+}
+
+/*Seleccion Todos los Parrafos Opciones Menú*/
+.CardOpcion1 p{
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+/*Estilos Titulos Card*/
+#CardTittle{
+  font-size: 21px;
+}
+
+/*Estilos Descripción Card*/
+#CardDes{
+  padding-top: 20%;
+  font-size: 14px;
 }
 
 /*Mobile Responsive Version*/
@@ -276,7 +324,7 @@ header ul li:hover .SubMenu ul{
     display: block;
     position: absolute;
     left: 85%;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--color-p);
     border-radius: 50px;
   }
