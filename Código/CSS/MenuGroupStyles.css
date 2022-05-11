@@ -1,0 +1,456 @@
+body{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+*{
+  font-family: 'Poppins', serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 21px;
+
+  /*Eliminar Subrayados*/
+  text-decoration: none;
+}
+
+/*Variables*/
+:root{
+  --color-p:#002D6D;
+}
+
+/*Encabezado*/
+header{
+  margin-top: 3%;
+  background-color: #FFFFFF;
+  text-align: center;
+  z-index: 1;
+}
+
+/*Acomodar Horizontalmente Menú*/
+header ul{
+  display: inline-flex;
+  list-style: none;
+}
+
+/*Tamaño Botones Menú*/
+header ul li{
+  padding: 5px 5px 5px 5px;
+}
+
+/*Decoración Letras Menu*/
+header ul li a{
+  text-decoration: none;
+  color: #282828;
+}
+
+/*Efecto Hover Menú*/
+li:hover{
+  background-color: rgba(85, 115, 158, 0.5);
+  border-radius: 4px;
+}
+
+/*Esconder Sub Menu 1*/
+.SubMenu{
+  display: none;
+  border: 1px solid;
+  border-color: var(--color-p);
+}
+
+/*Esconder Sub Menu 2 & Propiedades*/
+.SubMenu2{
+  display: none;
+  border: 1px solid;
+  border-color: #002D6D;
+  left: 100%;
+  top:-0.4%;
+  width: 100%;
+}
+
+/*Mostrar SubMenu2*/
+.MenuDos:hover .SubMenu2{
+  display: block;
+  position: absolute;
+}
+
+/*Mostrar Sub Menu*/
+header ul li:hover .SubMenu{
+  display: block;
+  position: absolute;
+  margin-left: -1.3%;
+  margin-top: 0.3%;
+}
+
+/*Acomodar Verticalmente Sub Menu*/
+header ul li:hover .SubMenu ul{
+  display: block;
+  margin: 0px;
+}
+
+/*Espacio estre Botones*/
+.Divider{
+  background-color: #FFFFFF;
+  height: 40px;
+  width: 1px;
+  margin: 0px 25px 0px 0px;
+}
+
+/*Divisor*/
+.DividerClose{
+  background-color: #000000;
+  height: 40px;
+  width: 1px;
+  margin: 0px 15px 0px 25px;
+}
+
+/*Pie de pagína*/
+.Pie{
+  width: 100%;
+  height: auto;
+
+  background-color:var(--color-p);
+  color: #FFFFFF;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  margin-top: auto;
+}
+
+/*Padding Contactos*/
+.Contactos{
+  padding: 2% 1%;
+}
+
+/*Tamaño Letra Contactos*/
+#Contact{
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/*Acomodar Redes Sociales*/
+.Redes{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+/*Tamaño Iconos Redes Sociales*/
+.Redes i{
+  font-size: 50px;
+  text-align: right;
+}
+
+/*Decoración Texto Redes Sociales*/
+.Pie a{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  align-items: center;
+  text-align:center;
+
+  font-size: 28px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*Ocultar Botón Desktop Versión*/
+.Menu-Boton{
+  display: none;
+  border: 0px;
+}
+
+/*CheckBox Invisible*/
+.Menu_Checkboxclass{
+  display: none;
+  transition: transform 0.3s;
+}
+
+
+
+/*Menú Opciones*/
+.CardsMenu{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+/*Card Opción*/
+.CardOpcion{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 120px 120px;
+  margin-left: 50%;
+
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid #00204D;
+  background-color: #00204D;
+  
+  text-align: center;
+  align-items: center;
+}
+
+/*Propiedades Imagen Card*/
+.CardOpcion img{
+
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+/*Seleccion Todos los Parrafos Opciones Menú*/
+.CardOpcion p{
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+/*Estilos Titulos Card*/
+#CardTittle{
+  font-size: 21px;
+}
+
+/*Estilos Descripción Card*/
+#CardDes{
+  font-size: 14px;
+  grid-column: 2;
+}
+
+/*Acomodar Horizontalmente Opciones Menú*/
+.GridMenu{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+/*Mobile Responsive Version*/
+@media Screen and (max-width:800px) {
+
+  /*Encabezado*/
+  header{
+    text-align: center;
+    align-items: center;
+
+    margin-top: 0%;
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--color-p);
+
+    /*Transición & Delay*/
+    transition: transform 0.3s;
+    transform: translateY(0);
+  }
+
+  /*Tamaño Letra Menú*/
+  a{
+    font-size: 28px;
+  }
+
+  /*Acomodar Horizontalmente Menú*/
+  header ul{
+    display:grid;
+    list-style: none;
+  }
+
+  /*Decoración Letras Menu*/
+  header ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  /*Mostrar Sub Menu*/
+  header ul li:hover .SubMenu{
+    display: block;
+    position: relative;
+    margin-left: -1.3%;
+    margin-top: 0%;
+  }
+
+  /*Tamaño Botones Menú*/
+  header ul li{
+    padding: 0px 0px 0px 0px;
+  }
+
+  /*Clase Mostrar Menú Mobile*/
+  ul--Show{
+    transform: translateY(0);
+  }
+
+  /*Checkbox Checked*/
+  .Menu_Checkboxclass:checked + header{
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+  }
+
+  /*Espacio estre Botones*/
+  .Divider{
+    background-color: var(--color-p);
+    height: 40px;
+    width: 1px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*Divisor*/
+  .DividerClose{
+    background-color: #FFFFFF;
+    height: 1px;
+    width: 350px;
+    margin: 35px 0px 15px 15%;
+  }
+
+  /*Esconder Sub Menu 1*/
+  .SubMenu{
+    display: none;
+    position: relative;
+    border: 1px solid;
+    border-color: var(--color-p);
+  }
+
+  /*Esconder Sub Menu 2 & Propiedades*/
+  .SubMenu2{
+    display: none;
+    position: relative;
+    border: 1px solid;
+    border-color: #002D6D;
+    left: 0%;
+    top:-0.4%;
+    width: 100%;
+  }
+
+  /*Mostrar SubMenu2*/
+  .MenuDos:hover .SubMenu2{
+    display: block;
+    position: relative;
+  }
+
+
+
+
+  .Menu-Boton{
+    margin-top: 3%;
+    display: block;
+    position: absolute;
+    left: 85%;
+    z-index: 2;
+    background-color: var(--color-p);
+    border-radius: 50px;
+  }
+
+  .Menu-Boton i{
+    margin: 5px;
+    padding: 5px;
+    filter: invert(1);
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .Menu-Boton img,button{
+    align-items: center;
+    text-align: center;
+
+    border-radius: 10%;
+
+    font-size: 1px;
+    background-color: #FFFFFF;
+  }
+
+
+  /*Pie de Pagína*/
+  .Pie{
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    background-color:var(--color-p);
+    color: #FFFFFF;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+    margin-top: auto;
+    z-index: 1;
+  }
+
+  /*Tanaño Iconos Redes Sociales*/
+  .Redes i{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*Decoración Texto Redes Sociales*/
+  .Pie a{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+    align-items:center;
+    text-align:center;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  /*Tamaño Letra Contactos*/
+  #Contact{
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+
+  /*Menú Opciones*/
+  .CardsMenu{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+
+  /*Card Opción 1*/
+  .CardOpcion{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 50%;
+    border: 1px solid #00204D;
+    background-color: #00204D;
+  }
+
+  /*Acomodar Verticalmente Opciones Menú*/
+  .GridMenu{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  /*Propiedades Imagen Card*/
+  .CardOpcion img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*Seleccion Todos los Parrafos Opciones Menú*/
+  .CardOpcion p{
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+
+  /*Estilos Titulos Card*/
+  #CardTittle{
+    font-size: 16px;
+  }
+
+  /*Estilos Descripción Card*/
+  #CardDes{
+    padding-top: 20%;
+    font-size: 14px;
+  }
+
+
+
+}
