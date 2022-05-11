@@ -53,6 +53,7 @@ header ul li a{
 /*Efecto Hover Menú*/
 li:hover{
   background-color: rgba(85, 115, 158, 0.5);
+  border-radius: 4px;
 }
 
 /*Esconder Sub Menu 1*/
@@ -144,7 +145,7 @@ header ul li:hover .SubMenu ul{
   grid-template-columns: repeat(3,1fr);
 }
 
-/*Tanaño Iconos Redes Sociales*/
+/*Tamaño Iconos Redes Sociales*/
 .Redes i{
   font-size: 50px;
   text-align: right;
@@ -163,6 +164,7 @@ header ul li:hover .SubMenu ul{
   color: #FFFFFF;
 }
 
+/*Ocultar Botón Desktop Versión*/
 .Menu-Boton{
   display: none;
   border: 0px;
@@ -187,8 +189,8 @@ header ul li:hover .SubMenu ul{
   text-align: center;
 }
 
-/*Card Opción 1*/
-.CardOpcion1{
+/*Card Opción*/
+.CardOpcion{
   margin: 0 auto;
   width: 60%;
   border: 1px solid #00204D;
@@ -196,12 +198,12 @@ header ul li:hover .SubMenu ul{
 }
 
 /*Propiedades Imagen Card*/
-.CardOpcion1 img{
+.CardOpcion img{
   position: relative;
 }
 
 /*Seleccion Todos los Parrafos Opciones Menú*/
-.CardOpcion1 p{
+.CardOpcion p{
   background-color: #F2F2F2;
   color: #000000;
 }
@@ -215,6 +217,12 @@ header ul li:hover .SubMenu ul{
 #CardDes{
   padding-top: 20%;
   font-size: 14px;
+}
+
+/*Acomodar Horizontalmente Opciones Menú*/
+.GridMenu{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 /*Mobile Responsive Version*/
@@ -362,6 +370,7 @@ header ul li:hover .SubMenu ul{
     grid-template-columns: repeat(1,1fr);
 
     margin-top: auto;
+    z-index: 1;
   }
 
   /*Tanaño Iconos Redes Sociales*/
@@ -389,6 +398,58 @@ header ul li:hover .SubMenu ul{
     font-size: 14px;
     margin-top: 15px;
   }
+
+
+  /*Menú Opciones*/
+  .CardsMenu{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+
+  /*Card Opción 1*/
+  .CardOpcion{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 50%;
+    border: 1px solid #00204D;
+    background-color: #00204D;
+  }
+
+  /*Acomodar Verticalmente Opciones Menú*/
+  .GridMenu{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  /*Propiedades Imagen Card*/
+  .CardOpcion img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*Seleccion Todos los Parrafos Opciones Menú*/
+  .CardOpcion p{
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+
+  /*Estilos Titulos Card*/
+  #CardTittle{
+    font-size: 16px;
+  }
+
+  /*Estilos Descripción Card*/
+  #CardDes{
+    padding-top: 20%;
+    font-size: 14px;
+  }
+
 
 
 }
