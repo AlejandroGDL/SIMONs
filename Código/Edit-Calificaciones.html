@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <!--Just CSS-->
-    <link rel="stylesheet" href="CSS/MenuGroupStyles.css">
+    <link rel="stylesheet" href="CSS/Edit-CalificacionesStyle.css">
 
     <!--Icons Online-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -108,55 +108,58 @@
       </nav>
     </header>
 
-    <!--Opciones Menú -->
-    <div class="CardsMenu">
+    <!--Contenido-->
+    <div class="Formulario">
 
-      <div class="GridMenu">
+    <div class="NumControl">
+      <label for="">N° de Control:</label>
+      <input type="text" id="TxtNControl" placeholder="e.j. 2010500000"></input>
+    </div>
 
-        <a href="Edit-Calificaciones.html">
-        <div class="CardOpcion">
-          <img src="Imagen/1Image.png" alt=""></img>
-          <p id="CardTittle">A1</p>
-          <p id="CardDes">Mecatronica.</p>
-        </div>
-        </a>
+    <div class="Nombre">
+      <label for="">Nombre Completo:</label>
+      <label for="">[Nombre]</label>
+      <!--<input type="text" id="TxtNombre" placeholder=""></input>-->
+    </div>
 
-        <a href="index.html">
-        <div class="CardOpcion">
-          <img src="Imagen/2Image.png" alt=""></img>
-          <p id="CardTittle">A2</p>
-          <p id="CardDes">Logistica.</p>
-        </div>
-        </a>
+    <div class="TxtCalificaciones">
 
-        <a href="index.html">
-        <div class="CardOpcion">
-          <img src="Imagen/3Image.png" alt=""></img>
-          <p id="CardTittle">A3</p>
-          <p id="CardDes">Tic's.</p>
-        </div>
-        </a>
-
-        <a href="index.html">
-        <div class="CardOpcion">
-          <img src="Imagen/4Image.png" alt=""></img>
-          <p id="CardTittle">A4</p>
-          <p id="CardDes">Administración.</p>
-        </div>
-        </a>
-
-        <a href="index.html">
-        <div class="CardOpcion">
-          <img src="Imagen/5Image.png" alt=""></img>
-          <p id="CardTittle">A5</p>
-          <p id="CardDes">Mecatronica.</p>
-        </div>
-        </a>
-
-
+      <div>
+        <label for="">Unidad 1:</label>
+        <input type="text" id="TxtCal1" ></input>
       </div>
 
+      <div>
+        <label for="">Unidad 2:</label>
+        <input type="text" id="TxtCal2" ></input>
+      </div>
+
+      <div>
+        <label for="">Unidad 3:</label>
+        <input type="text" id="TxtCal3" ></input>
+      </div>
+
+      <div>
+        <label for="">Unidad 4:</label>
+        <input type="text" id="TxtCal4" ></input>
+      </div>
+
+      <div>
+        <label for="">Unidad 5:</label>
+        <input type="text" id="TxtCal5" ></input>
+      </div>
+
+
     </div>
+
+    <div class="botones">
+      <button type="button" name="button" id="BtnPrincipal">Guardar Cambios</button>
+
+      <button type="button" name="button" id="BtnSecundario">Cancelar</button>
+    </div>
+
+
+  </div>
 
     <!--Pie de Pagína-->
     <footer class="Pie">

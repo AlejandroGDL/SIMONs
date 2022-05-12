@@ -3,6 +3,11 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  /*
+  position: relative;
+  padding-bottom: 3%;
+  min-height: 88.4vh;
+  */
 }
 
 *{
@@ -10,9 +15,6 @@ body{
   margin: 0px;
   padding: 0px;
   font-size: 21px;
-
-  /*Eliminar Subrayados*/
-  text-decoration: none;
 }
 
 /*Variables*/
@@ -20,12 +22,37 @@ body{
   --color-p:#002D6D;
 }
 
+#BtnPrincipal{
+  border: 0px solid;
+  border-radius: 4px;
+
+  color: #FFFFFF;
+  background-color: var(--color-p);
+
+  width: 200px;
+  height: 60px;
+}
+
+#BtnPrincipal:Hover{
+  background-color: #00204D;
+}
+
+#BtnSecundario{
+  border: 1px solid #9a9a9a;
+  border-radius: 4px;
+
+  color: #000000;
+  background-color: transparent;
+
+  width: 200px;
+  height: 60px;
+}
+
 /*Encabezado*/
 header{
   margin-top: 3%;
   background-color: #FFFFFF;
   text-align: center;
-  z-index: 1;
 }
 
 /*Acomodar Horizontalmente Menú*/
@@ -48,7 +75,6 @@ header ul li a{
 /*Efecto Hover Menú*/
 li:hover{
   background-color: rgba(85, 115, 158, 0.5);
-  border-radius: 4px;
 }
 
 /*Esconder Sub Menu 1*/
@@ -116,6 +142,11 @@ header ul li:hover .SubMenu ul{
   grid-template-columns: repeat(2,1fr);
 
   margin-top: auto;
+
+  /*
+  bottom: 0px;
+  position: absolute;
+  */
 }
 
 /*Padding Contactos*/
@@ -135,7 +166,7 @@ header ul li:hover .SubMenu ul{
   grid-template-columns: repeat(3,1fr);
 }
 
-/*Tamaño Iconos Redes Sociales*/
+/*Tanaño Iconos Redes Sociales*/
 .Redes i{
   font-size: 50px;
   text-align: right;
@@ -166,67 +197,69 @@ header ul li:hover .SubMenu ul{
   transition: transform 0.3s;
 }
 
+/*Formulario Completo*/
+.Formulario{
+  padding: 100px;
 
-
-/*Menú Opciones*/
-.CardsMenu{
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-
-  background-color: #FFFFFF;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
-/*Card Opción*/
-.CardOpcion{
-  width: 130px;
+/*Texboxes Formulario*/
+.Formulario input{
+  border-radius: 4px;
+  border: 1px solid #9A9A9A;
 
-  border: 1px solid #00204D;
-  background-color: #00204D;
-
-  text-align: center;
-  align-items: center;
+  width: 300px;
 }
 
-/*Propiedades Imagen Card*/
-.CardOpcion img{
-  position: relative;
-  width: 50%;
-  height: 50%;
-  margin: 15px 0;
+/*Labels Formulario*/
+.Formulario label{
+  color: #282828;
 }
 
-/*Seleccion Todos los Parrafos Opciones Menú*/
-.CardOpcion p{
-  background-color: #F2F2F2;
-  color: #000000;
+/*Textbox & Label Número Control *Acomodo Vertical* */
+.NumControl{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
 }
 
-/*Estilos Titulos Card*/
-#CardTittle{
-  font-size: 21px;
-  border: 1px solid #F2F2F2;
+/*Texbox & Label Nombre Completo *Acomodo Vertical* */
+.Nombre{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
 }
 
-/*Estilos Descripción Card*/
-#CardDes{
-  font-size: 14px;
+/*Texboxes Calificaciones*/
+.TxtCalificaciones{
   grid-column: 2;
-  border: 1px solid #F2F2F2;
-}
 
-/*Acomodar Horizontalmente Opciones Menú*/
-.GridMenu{
   display: grid;
   grid-template-columns: repeat(5,1fr);
 }
 
-/*Espacios entre Opciones Menú*/
-.GridMenu a{
-  margin-left: 50px;
+.TxtCalificaciones input{
+  width: 100%;
 }
+
+.TxtCalificaciones div{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+
+  margin: 150px 10px;
+
+  text-align: center;
+}
+
+.botones{
+  grid-column: 2;
+  text-align: center;
+}
+
+.botones button{
+  margin: 0px 50px;
+}
+
 
 /*Mobile Responsive Version*/
 @media Screen and (max-width:800px) {
@@ -335,7 +368,7 @@ header ul li:hover .SubMenu ul{
     display: block;
     position: absolute;
     left: 85%;
-    z-index: 2;
+    z-index: 1;
     background-color: var(--color-p);
     border-radius: 50px;
   }
@@ -373,7 +406,6 @@ header ul li:hover .SubMenu ul{
     grid-template-columns: repeat(1,1fr);
 
     margin-top: auto;
-    z-index: 1;
   }
 
   /*Tanaño Iconos Redes Sociales*/
@@ -401,59 +433,6 @@ header ul li:hover .SubMenu ul{
     font-size: 14px;
     margin-top: 15px;
   }
-
-
-  /*Menú Opciones*/
-  .CardsMenu{
-    position: absolute;
-    top: 35%;
-    left: 45%;
-    transform: translateX(-50%) translateY(-50%);
-
-    background-color: #FFFFFF;
-    text-align: center;
-  }
-
-  /*Card Opción*/
-  .CardOpcion{
-    margin: 0 auto;
-    margin-top: 5%;
-    width: 120px;
-    border: 1px solid #00204D;
-    background-color: #00204D;
-  }
-
-  /*Acomodar Verticalmente Opciones Menú*/
-  .GridMenu{
-    display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  /*Propiedades Imagen Card*/
-  .CardOpcion img{
-    position: relative;
-    width: 50px;
-    height: 50px;
-  }
-
-  /*Seleccion Todos los Parrafos Opciones Menú*/
-  .CardOpcion p{
-    background-color: #F2F2F2;
-    color: #000000;
-  }
-
-  /*Estilos Titulos Card*/
-  #CardTittle{
-    font-size: 16px;
-  }
-
-  /*Estilos Descripción Card*/
-  #CardDes{
-    padding-top: 10%;
-    font-size: 14px;
-  }
-
 
 
 }
