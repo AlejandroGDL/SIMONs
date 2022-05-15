@@ -20,6 +20,7 @@ body{
 /*Variables*/
 :root{
   --color-p:#002D6D;
+  --color-pDark:#00204D;
 }
 
 #BtnPrincipal{
@@ -197,6 +198,8 @@ header ul li:hover .SubMenu ul{
   transition: transform 0.3s;
 }
 
+
+
 /*Formulario Completo*/
 .Formulario{
   padding: 100px;
@@ -209,26 +212,66 @@ header ul li:hover .SubMenu ul{
 .Formulario input{
   border-radius: 4px;
   border: 1px solid #9A9A9A;
-
-  width: 300px;
-}
-
-/*Labels Formulario*/
-.Formulario label{
-  color: #282828;
 }
 
 /*Textbox & Label Número Control *Acomodo Vertical* */
 .NumControl{
   display: grid;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+
+  border: 1px solid var(--color-pDark);
+
+  width: 350px;
+  height: 100px;
+
+  /*Bordes Redondos*/
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/*Encabezado Número de Control*/
+.NumControl span{
+  background-color: var(--color-pDark);
+
+  color: #FFF;
+  text-align: center;
+  height: 30px;
+}
+
+
+.DatosPer{
+  grid-row: 2;
+
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+
+  border: 1px solid var(--color-pDark);
+
+  /*Bordes Redondos*/
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  width: 350px;
+  height: 355px;
+
+  border: 1px solid var(--color-pDark);
+}
+
+.DatosPer span{
+  background-color: var(--color-pDark);
+
+  color: #FFF;
+  text-align: center;
+  height: 30px;
 }
 
 /*Texbox & Label Nombre Completo *Acomodo Vertical* */
-.Nombre{
+.Datos{
   display: grid;
   grid-template-rows: repeat(2,1fr);
 }
+
+
 
 /*Texboxes Calificaciones*/
 .TxtCalificaciones{
