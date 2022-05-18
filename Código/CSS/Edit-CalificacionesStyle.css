@@ -3,11 +3,6 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /*
-  position: relative;
-  padding-bottom: 3%;
-  min-height: 88.4vh;
-  */
 }
 
 *{
@@ -292,6 +287,22 @@ header ul li:hover .SubMenu ul{
   margin: 150px 10px;
 
   text-align: center;
+}
+
+.header span{
+  font-size: 28px;
+  color: #FFF;
+
+  width: 500px;
+  height: 50px;
+  background-color:var(--color-pDark);
+}
+
+.header{
+  background-color: rgb(29, 186, 212);
+
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
 }
 
 .botones{
