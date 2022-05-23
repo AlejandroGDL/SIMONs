@@ -111,35 +111,34 @@
     <!--Contenido-->
     <div class="Formulario">
 
-    <div class="NumControl">
-      <span>Identificador</span>
-      <label for="">N° de Control:</label>
-      <input type="text" id="TxtNControl" placeholder="e.j. 2010500000"></input>
-    </div>
-
-    <div class="DatosPer">
-      <span>Datos Personales</span>
-      <div class="Datos">
-        <label for="">Nombre Completo:</label>
-        <input type="text" id="TxtNombre" placeholder=""></input>
+      <div class="NumControl">
+        <span>Identificador</span>
+          <div class="AcomodoV">
+            <label for="">N° de Control:</label>
+            <input type="text" id="TxtNControl" placeholder="e.j. 2010500000" readonly="readonly"></input>
+          </div>
       </div>
 
-      <div class="Datos">
-        <label for="">Carrera:</label>
-        <input type="text" id="TxtNombre" placeholder=""></input>
+      <div class="DatosPer">
+        <span>Datos Personales</span>
+        <div class="AcomodoV">
+          <label for="">Nombre Completo:</label>
+          <input type="text" id="TxtNombre" placeholder=""></input>
+        </div>
+        <div class="AcomodoV">
+          <label for="">Carrera:</label>
+          <input type="text" id="TxtNombre" placeholder=""></input>
+        </div>
+        <div class="AcomodoV">
+          <label for="">Grupo:</label>
+          <input type="text" id="TxtNombre" placeholder=""></input>
+        </div>
       </div>
 
-      <div class="Datos">
-        <label for="">Grupo:</label>
-        <input type="text" id="TxtNombre" placeholder=""></input>
-      </div>
+      <div class="header">
+        <span>Calificaciones</span>
+        <div class="TxtCalificaciones">
 
-    </div>
-
-    <div class="header">
-      <span>Calificaciones</span>
-
-      <div class="TxtCalificaciones">
         <div>
           <label for="">Unidad 1:</label>
           <input type="text" id="TxtCal1" ></input>
@@ -165,19 +164,16 @@
           <input type="text" id="TxtCal5" ></input>
         </div>
 
+        </div>
       </div>
+
+      <div class="botones">
+        <button type="button" name="button" id="BtnPrincipal">Guardar Cambios</button>
+
+        <button type="button" name="button" id="BtnSecundario">Cancelar</button>
+      </div>
+
     </div>
-
-
-
-    <div class="botones">
-      <button type="button" name="button" id="BtnPrincipal">Guardar Cambios</button>
-
-      <button type="button" name="button" id="BtnSecundario">Cancelar</button>
-    </div>
-
-
-  </div>
 
     <!--Pie de Pagína-->
     <footer class="Pie">
@@ -197,5 +193,5 @@
     </footer>
 
   </body>
-  
+
 </html>
