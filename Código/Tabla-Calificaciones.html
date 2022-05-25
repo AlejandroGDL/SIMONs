@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <!--Just CSS-->
-    <link rel="stylesheet" href="CSS/Edit-CalificacionesStyle.css">
+    <link rel="stylesheet" href="CSS/TablaStyles.css">
 
     <!--Icons Online-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -95,7 +95,7 @@
           </li>
         -->
 
-          <li> <a href="Menu-Profesor.html">Inicio</a> </li>
+          <li> <a href="Menu.html">Inicio</a> </li>
           <span class="Divider"></span>
           <li> <a href="#">Calificaciones</a> </li>
           <span class="Divider"></span>
@@ -109,71 +109,66 @@
     </header>
 
     <!--Contenido-->
-    <div class="Formulario">
+    <div class="Contenido">
 
-      <div class="NumControl">
-        <span>Identificador</span>
-          <div class="AcomodoV">
-            <label for="">N° de Control:</label>
-            <input type="text" id="TxtNControl" placeholder="e.j. 2010500000" readonly="readonly"></input>
+      <div class="Tabla">
+
+        <div class="Header-Completo">
+          <ul>
+            <div class="HeaderDivisor">
+              <li>Materias</li>
+              <li>Calificaciones</li>
+              <li>Acciones</li>
+            </div>
+          </ul>
+
+          <div class="SubHeader">
+            <ul>
+              <div class="SubHeaderDivisor">
+                <li>I</li>
+                <li>II</li>
+                <li>III</li>
+                <li>IV</li>
+                <li>V</li>
+              </div>
+            </ul>
           </div>
-      </div>
-
-      <div class="DatosPer">
-        <span>Datos Personales</span>
-        <div class="AcomodoV">
-          <label for="">Nombre Completo:</label>
-          <input type="text" id="TxtNombre" placeholder=""></input>
-        </div>
-        <div class="AcomodoV">
-          <label for="">Carrera:</label>
-          <input type="text" id="TxtNombre" placeholder=""></input>
-        </div>
-        <div class="AcomodoV">
-          <label for="">Grupo:</label>
-          <input type="text" id="TxtNombre" placeholder=""></input>
-        </div>
-      </div>
-
-      <div class="header">
-        <span>Calificaciones</span>
-        <div class="TxtCalificaciones">
-
-        <div>
-          <label for="">Unidad 1:</label>
-          <input type="text" id="TxtCal1" ></input>
-        </div>
-
-        <div>
-          <label for="">Unidad 2:</label>
-          <input type="text" id="TxtCal2" ></input>
-        </div>
-
-        <div>
-          <label for="">Unidad 3:</label>
-          <input type="text" id="TxtCal3" ></input>
-        </div>
-
-        <div>
-          <label for="">Unidad 4:</label>
-          <input type="text" id="TxtCal4" ></input>
-        </div>
-
-        <div>
-          <label for="">Unidad 5:</label>
-          <input type="text" id="TxtCal5" ></input>
-        </div>
 
         </div>
-      </div>
 
-      <div class="botones">
-        <button type="button" name="button" id="BtnPrincipal">Guardar Cambios</button>
+        <div class="Usuarios">
+          <ul>
+            <div class="Nombres">
+              <li>Gabriel del Cristo</li>
+              <li>Juan de Dios</li>
+              <li>Maria del Carmen</li>
+              <li>Camila de la Santisima Trinidad</li>
+              <li>Jairo de Jesus</li>
+              <li>Tatiana de las Mercedes</li>
+              <li>Sara del Mar</li>
+              <li>Pedro del Divino</li>
+            </div>
+          </ul>
 
-        <button type="button" name="button" id="BtnSecundario">Cancelar</button>
+          <ul>
+            <div class="UsuarioCalificaciones">
+              <li>8</li>
+              <li>9</li>
+              <li>7</li>
+              <li>7</li>
+              <li>8</li>
+            </div>
+          </ul>
+
+          <div class="Acciones">
+            <a id="EditButton"ref="#"><i class="fa-solid fa-pen-to-square"></i></a>
+          </div>
+        </div>
+
       </div>
 
     </div>
+
 
     <!--Pie de Pagína-->
     <footer class="Pie">
@@ -193,5 +188,4 @@
     </footer>
 
   </body>
-
 </html>
